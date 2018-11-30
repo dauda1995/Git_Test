@@ -1,0 +1,4 @@
+this is not for the faint hearted
+write a function that accepts a string name and checks if an individual with such name has been evicted from the decagon program, this function should also determine the probability of someone leaving the organisation before the completion of the program, based on the number of times that particular function runs with the individual's name
+example:
+    checkName(str) = should check from a static array and return true or false (or any modified response best suited) and probability of leaving =>(true, 50%) 
