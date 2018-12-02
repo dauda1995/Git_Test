@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3></h3>
+       
+                <input type='text' placeholder='enter name' id='name'>
+                <input type='password' placeholder='enter password' id='password'>
+                <input type='password' placeholder='enter password again!' id='cpassword'>
+                <button id='signup' onclick="get_userdetails()">Sign up</button>
+       
+           
+        
+        <script>
+                // function userDetails() {
+                //     console.log('done')
+                    
+                // let name = document.getElementById('name').value();       
+                // let password = document.getElementById('password').value();       
+                // let confirmPassword = document.getElementById('cpassword').value(); 
+                // let arr = {
+                //         user_name:name,
+                //         user_pass:password,
+                //         con_pass:confirmPassword 
+                //     };  
+                //    return arr;
+                // }
+            
+            
+                   function get_userdetails(){
+                      
+                      var name =document.getElementById('name').value;      
+                      var password = document.getElementById('password').value;       
+                      var confirmPassword =document.getElementById('cpassword').value;
+                       
+                       //Bruh, how the hell do you make a bug with document.getElementById(" ").value;
+                        if(name !='' && password !==''){
+                            if(password === confirmPassword){
+                               
+                                localStorage.setItem('username', name)
+                                window.location.replace("newPage.html");
+                            }
+                        }else{
+                            alert('wrong')
+                        }
+
+                    };
+
+            
+        </script>
+    </body>
+</html>
